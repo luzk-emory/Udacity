@@ -19,14 +19,14 @@ Source: Wikipedia.
 
 Let us first take a look at each dog breed's number of tweets.
 
-![png](output_97_0.png)
+![png](pic/output_97_0.png)
 
 It can been seen that golden retriever is the most popular dog breed as it gets a total of more than 150 tweets, way higher than the second one on the list. However, this indicator sounds more like a measure of prevalence. Many people love Ferrari, but most of them can only afford a Toyota. Maybe this is an improper metaphor, but a similar issue may exist here. In what follows, I will use `rating`, `retweet count`, and `favorite count` to measure popularity.
 
 To perform our analysis, we need some housekeeping work. First, I standardize all rating to a base of 10 and put a cap of 20, because the original rating denominators have a wide range. In addition to the ratings, we also consider retweets and favorites as alternative measures of popularity. Since these two numbers all highly skewed, a log transformation is preferred. The histogram plot of logged retweet numbers is presented below, 
 
 
-![png](output_103_0.png)
+![png](pic/output_103_0.png)
 
 which has a nice bell-shape. The data looks like this:
 
@@ -84,12 +84,12 @@ Some breeds have only a few observations, so their average rating could incur la
 Here, I plot the top 10 breeds for `rating`, `logged number of retweets`, and `logged number of favorite` respectively. I use the violin plot to show the distribution within the breed.
 
 
-![png](output_108_0.png)
+![png](pic/output_108_0.png)
 
 
-![png](output_110_0.png)
+![png](pic/output_110_0.png)
 
-![png](output_112_0.png)
+![png](pic/output_112_0.png)
 
 Finally, we pick out the breeds who are on the top 10 list for all three measures. They are **border terrier**, **samoyed**, **golden retriever**, and **great pyrenees**.
 
@@ -135,7 +135,7 @@ Finally, we pick out the breeds who are on the top 10 list for all three measure
   </tbody>
 </table>
 
-![png](output_115_0.png)
+![png](pic/output_115_0.png)
 
 
 Hence, I conclude that these four breeds are the most popular breeds in WeRateDogs. 
@@ -147,7 +147,7 @@ This activity lasted for a long time. Our sample alone covers a span of two year
 Here, I aggregate the data to a monthly frequency. It seems their is no obvious trend in any of the three indicators I used. So this activity's fan base is relatively stable.
 
 
-![png](output_120_0.png)
+![png](pic/output_120_0.png)
 
 
 ### What is the best timing of posting a tweet?
@@ -157,20 +157,20 @@ If a participant wants to get a higher rate and more retweets, on which day of t
 Here, I only explore the weekday effect. Similar questions could be raised regarding other aspects of timing, like at which hour during a day. I first plot the average tweet numbers for each weekday.
 
 
-![png](output_123_0.png)
+![png](pic/output_123_0.png)
 
 Here, 0 represents Monday and 6 represents Sunday. Monday, on average, has more tweets posted. 
 
 Then what about retweets and favorites? 
 
 
-![png](output_127_0.png)
+![png](pic/output_127_0.png)
 
 
 It seems tweeting on Wednesday can get a higher number of retweet and favorite. However, this results could be driven by some extreme cases because we are using the arithmetic mean. Let's take a look at the average of log and ratings.
 
 
-![png](output_129_0.png)
+![png](pic/output_129_0.png)
 
 
 Now the advantage of Wednesday is gone. It seems there is no difference between different weekdays. Maybe next time, we could try a different dimension, like at what time of a day.
