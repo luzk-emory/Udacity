@@ -1,2 +1,0 @@
-# Udacity
-Udacity Nanodegree Projects
