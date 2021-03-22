@@ -2,7 +2,7 @@
 
 Data Analysis with Python and SQL
 
-
+![certificate](certificate.png)
 
 ## Project overview
 
